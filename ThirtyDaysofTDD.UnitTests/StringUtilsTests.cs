@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ThirtyDaysofTDD.ClassLibrary;
 using NUnit.Framework;
 
 namespace ThirtyDaysofTDD.UnitTests
