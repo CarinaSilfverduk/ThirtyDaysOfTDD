@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ThirtyDaysofTDD.UnitTests
+namespace ThirtyDaysofTDD.ClassLibrary
 {
     class StringUtils
     {
