@@ -11,6 +11,7 @@ namespace ThirtyDaysofTDD.UnitTests
     [TestFixture]
     public class StringUtilsTests
     {
+
         [Test]
         public void ShouldBeAbleToCountNumberOfLettersInSimpleSentence()
         {
@@ -35,6 +36,17 @@ namespace ThirtyDaysofTDD.UnitTests
             int result = stringUtils.FindNumberOfOccurences(sentenceToScan, characterToScanFor);
 
             Assert.AreEqual(expectedResult, result);
+        }
+
+        [Test]
+        [ExpectedException(typeof(ArgumentException))]
+        public void ShouldGetAnArgumentExceptionWhenCharacterToScanForIsLargerThanOneCharacter()
+        {
+            var sentenceToScan = "This test should throw an exception";
+            var characterToScanFor = "xx";
+            var stringUtils = new StringUtils();
+
+            stringUtils.FindNumberOfOccurences(sentenceToScan, characterToScanFor);
         }
     }
 
