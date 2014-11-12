@@ -10,20 +10,29 @@ namespace ThirtyDaysofTDD.ClassLibrary
     {
         public int FindNumberOfOccurences(string sentenceToScan, string characterToScanFor)
         {
-            var stringToCheckAsCharacterArray = sentenceToScan.ToCharArray();
-            var characterToCheckFor = Char.Parse(characterToScanFor);
-
-            var numberOfOccurences = 0;
-
-            for (var charIdx = 0; charIdx < stringToCheckAsCharacterArray.GetUpperBound(0); charIdx++)
+            try
             {
-                if (stringToCheckAsCharacterArray[charIdx] == characterToCheckFor)
+                var stringToCheckAsCharacterArray = sentenceToScan.ToCharArray();
+                var characterToCheckFor = Char.Parse(characterToScanFor);
+
+                var numberOfOccurences = 0;
+
+                for (var charIdx = 0; charIdx < stringToCheckAsCharacterArray.GetUpperBound(0); charIdx++)
                 {
-                    numberOfOccurences++;
+                    if (stringToCheckAsCharacterArray[charIdx] == characterToCheckFor)
+                    {
+                        numberOfOccurences++;
+                    }
                 }
+
+                return numberOfOccurences; 
+            }
+            catch 
+            {
+                throw new ArgumentException();
             }
 
-            return numberOfOccurences;
+
         }
     }
 }
