@@ -18,7 +18,7 @@ namespace TddStore.Core
 
         public object PlaceOrder(Guid customerId, ShoppingCart shoppingCart)
         {
-            // TODO: Implement this method
+            // TODO: Implement this method --
             throw new NotImplementedException();
         }
     }
