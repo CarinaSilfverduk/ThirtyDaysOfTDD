@@ -16,7 +16,7 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 
-namespace ThirtyDaysofTDD.UnitTests.DependencyResolution {
+namespace TddStore.UnitTests.DependencyResolution {
     using StructureMap;
 	
     public static class IoC {

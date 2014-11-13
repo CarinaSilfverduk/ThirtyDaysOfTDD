@@ -15,7 +15,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace ThirtyDaysofTDD.UnitTests.DependencyResolution {
+namespace TddStore.UnitTests.DependencyResolution {
     using System;
     using System.Collections.Generic;
     using System.Linq;
