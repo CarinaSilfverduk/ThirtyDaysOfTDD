@@ -20,6 +20,7 @@ namespace TddStore.Core
         {
             var order = new Order();
             return _orderDataService.Save(order);
+            //return Guid.NewGuid();
         }
     }
 }

@@ -20,7 +20,9 @@ namespace TddStore.UnitTests
             var expectedOrderId = Guid.NewGuid();
 
             var orderDataService = Mock.Create<IOrderDataService>();
-            Mock.Arrange(() => orderDataService.Save(Arg.IsAny<Order>())).Returns(expectedOrderId).OccursOnce();
+            Mock.Arrange(() => orderDataService.Save(Arg.IsAny<Order>()))
+                .Returns(expectedOrderId)
+                .OccursOnce();
             var orderService = new OrderService(orderDataService);
 
             //Act
