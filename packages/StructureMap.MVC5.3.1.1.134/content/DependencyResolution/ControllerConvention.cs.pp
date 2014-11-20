@@ -15,7 +15,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace ThirtyDaysofTDD.UnitTests.DependencyResolution {
+namespace $rootnamespace$.DependencyResolution {
     using System;
     using System.Web.Mvc;
 

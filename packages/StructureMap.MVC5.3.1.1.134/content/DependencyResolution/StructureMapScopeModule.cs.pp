@@ -1,7 +1,7 @@
-namespace TddStore.UnitTests.DependencyResolution {
+namespace $rootnamespace$.DependencyResolution {
     using System.Web;
 
-    using TddStore.UnitTests.App_Start;
+    using $rootnamespace$.App_Start;
 
     using StructureMap.Web.Pipeline;
 

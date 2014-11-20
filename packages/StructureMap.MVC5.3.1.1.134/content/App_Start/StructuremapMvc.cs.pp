@@ -1,4 +1,4 @@
-// --------------------------------------------------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="StructuremapMvc.cs" company="Web Advanced">
 // Copyright 2012 Web Advanced (www.webadvanced.com)
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,18 +15,19 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-using TddStore.UnitTests.App_Start;
+using $rootnamespace$.App_Start;
 
 using WebActivatorEx;
 
 [assembly: PreApplicationStartMethod(typeof(StructuremapMvc), "Start")]
 [assembly: ApplicationShutdownMethod(typeof(StructuremapMvc), "End")]
 
-namespace TddStore.UnitTests.App_Start {
+namespace $rootnamespace$.App_Start {
+	using System.Web.Mvc;
 
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 
-	using TddStore.UnitTests.DependencyResolution;
+	using $rootnamespace$.DependencyResolution;
 
     using StructureMap;
     

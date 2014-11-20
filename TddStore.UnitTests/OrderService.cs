@@ -16,11 +16,6 @@ namespace TddStore.Core
             _orderDataService = orderDataService;
         }
 
-        public OrderService()
-        {
-            throw new NotImplementedException();
-        }
-
         public object PlaceOrder(Guid customerId, ShoppingCart shoppingCart)
         {
             var order = new Order();

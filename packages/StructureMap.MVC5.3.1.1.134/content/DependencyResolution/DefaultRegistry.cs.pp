@@ -15,7 +15,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace TddStore.UnitTests.DependencyResolution {
+namespace $rootnamespace$.DependencyResolution {
     using StructureMap.Configuration.DSL;
     using StructureMap.Graph;
 	
