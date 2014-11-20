@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using NUnit.Framework;
+using TddStore.Core;
 
 namespace TddStore.UnitTests
 {
@@ -23,5 +24,6 @@ namespace TddStore.UnitTests
             //Assert
             Assert.AreEqual(expectedOrderId, result);
         }
+
     }
 }

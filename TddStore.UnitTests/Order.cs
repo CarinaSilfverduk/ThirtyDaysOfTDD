@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TddStore.Core;
 
-namespace TddStore.UnitTests
+namespace TddStore.Core
 {
-    public interface IOrderDataService
+    public class Order
     {
-        Guid Save(Order order);
+
     }
 }

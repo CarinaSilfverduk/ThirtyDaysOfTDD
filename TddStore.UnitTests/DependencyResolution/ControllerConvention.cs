@@ -17,7 +17,6 @@
 
 namespace TddStore.UnitTests.DependencyResolution {
     using System;
-    using System.Web.Mvc;
 
     using StructureMap.Configuration.DSL;
     using StructureMap.Graph;

@@ -16,10 +16,15 @@ namespace TddStore.Core
             _orderDataService = orderDataService;
         }
 
+        public OrderService()
+        {
+            throw new NotImplementedException();
+        }
+
         public object PlaceOrder(Guid customerId, ShoppingCart shoppingCart)
         {
-            // TODO: Implement this method --
-            throw new NotImplementedException();
+            var order = new Order();
+            return _orderDataService.Save(order);
         }
     }
 }
